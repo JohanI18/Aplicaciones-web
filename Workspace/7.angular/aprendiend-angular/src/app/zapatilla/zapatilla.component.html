@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+<ul>
+    <li *ngFor="let deportiva of zapatilla">
+        <span *ngIf="deportiva.stock">
+            {{deportiva.marca}}-{{deportiva.color}}-
+            {{deportiva.precio}}-{{deportiva.stock}}
+        </span>
+    </li>
+</ul>

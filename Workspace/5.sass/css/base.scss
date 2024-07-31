@@ -1,0 +1,89 @@
+//Variables en SASS
+$color-primary: #3498db;
+$alert-success: #2ecc71;
+$alert-danger: #e74c3c;
+$alert-normal: #bdc3c7;
+body {
+    background-color: $color-primary;
+}
+.alert {
+    background-color: $alert-normal;
+}
+.alert-success {
+    background-color: $alert-success;
+}
+.alert-danger {
+    background-color: $alert-danger;
+}
+//Anidación en SASS
+.cajas {
+    .caja {
+        border: 1px solid $color-primary;
+        h1 {
+            color: darken($color-primary, 10%);
+        }
+        p {
+            color: lighten($color-primary, 20%);
+        }
+    }
+}
+.listado {
+    ul {
+        list-style-type: none;
+        li {
+            margin: 5px;
+            padding: 10px;
+            background-color: lighten($color-primary, 40%);
+        }
+    }
+}
+//Mixins en SASS
+@mixin button-style($color, $size: 15px) {
+    background-color: $color;
+    padding: 5px 10px;
+    font-size: $size;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary {
+    @include button-style($color-primary);
+}
+.btn-success {
+    @include button-style($alert-success);
+}
+.btn-danger {
+    @include button-style($alert-danger, 18px);
+}
+//Herencia y Placeholder Selectors
+%alert-base {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.alert {
+    @extend %alert-base;
+    background-color: $alert-normal;
+}
+.alert-success {
+    @extend %alert-base;
+    background-color: $alert-success;
+}
+.alert-danger {
+    @extend %alert-base;
+    background-color: $alert-danger;
+}
+//Condicionales y Bucles en SASS
+@for $i from 1 through 5 {
+    .m-#{$i} { margin: $i * 5px; }
+    .p-#{$i} { padding: $i * 5px; }
+}
+$themes: ('light': #ecf0f1, 'dark': #34495e);
+@each $theme, $color in $themes {
+    .theme-#{$theme} {
+        background-color: $color;
+    }
+}

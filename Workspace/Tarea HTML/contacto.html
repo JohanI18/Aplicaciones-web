@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Johan">
+    <meta name="description" content="Pagina web de venta de herramientas ferreteras">
+    <meta name="keywords" content="ferreteria, herramientas, Ambato, venta, construcción, bricolaje, idmasol">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./imagenes/file.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <div id="top">
+            <h1 class="title">Contacto</h1>
+            <img class="logo" src="./imagenes/file.png" alt="logo" height="200px">
+        </div>
+    </header>
+    <div id="search-bar">
+        <hr>
+    <input id="search-text" name="s" placeholder="Búsqueda de Productos" value="" type="text" title="Buscar por:" autocomplete="off">
+    <hr>
+    </div>
+    <div id="menu">
+        <nav id="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item"><a href="productos.html">Productos</a></li>
+                <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item">Contacto</li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main-contact">
+        <div id="contact-container" class="container2">
+            <h1 id="contact-title" class="title">Contáctanos</h1>
+            <p id="contact-description" class="description">Si tienes alguna pregunta, comentario o necesitas más información, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <form id="contact-form" action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Asunto:</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-button" class="submit-button">Enviar</button>
+            </form>
+    
+            <h2 id="contact-info-title" class="info-title">Información de Contacto</h2>
+            <p class="contact-info"><strong>Dirección:</strong> Pedro Pablo Echeverría, Ambato</p>
+            <p class="contact-info"><strong>Teléfono:</strong> 0962364126</p>
+            <p class="contact-info"><strong>Correo Electrónico:</strong> idmasol.sa@gmail.com</p>
+        </div>
+    </main>
+    <hr>
+    <footer id="footer">
+        <div class="footer-section" id="footer-contact">
+            <img class="footer-logo" src="./imagenes/file.png" alt="IDMASOL logo" height="100px">
+            <a class="whatsapp-link" href="https://wa.me/593962364126" target="_blank">
+                <img class="whatsapp-icon" src="https://cdn-icons-png.flaticon.com/512/4406/4406172.png" alt="Whatsapp logo" height="50px">
+                <span>Contáctanos por WhatsApp</span>
+            </a>
+        </div>
+        <div class="footer-section" id="footer-info">
+            <h3 class="footer-title">Quienes somos</h3>
+            <p class="footer-text">Atencion al cliente</p>
+            <p class="footer-phone">0962364126</p>
+            <p class="footer-email-label">Correo electronico</p>
+            <a class="footer-email" href="mailto:idmasol.sa@gmail.com?Subject:Ayuda">idmasol.sa@gmail.com</a>
+        </div>
+        <div class="footer-section" id="footer-map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1034.859630376672!2d-78.621324681199!3d-1.282363592403654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sec!4v1716167350883!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-section" id="footer-rights">
+            <p class="footer-rights-text">© 2024 IDMASOL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>>

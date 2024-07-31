@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="uft-8">
+        <meta name = "autor" content="Johan">
+        <meta name="description" content="Mi pagina">
+        <meta name="keywords" content="mi pagina, web">
+
+        <title>Mi pagina</title>
+
+        <link rel="shorcut icon" href="6510324.png">
+    </head>
+    <body>
+        <!---cabecera-->
+        <header id="header">
+            <h1>Mi pagina</h1>
+        </header>
+        <hr>
+        <nav> 
+            <!--lista ordenadas y desordenadas-->
+            <!--Barra de navegacion - menu -->
+            <!--para ordenadas ol y ul para desordenadas-->
+            <ul>
+                <li>Inicio</li>
+                <li>Nosotros</li>
+                <li>Galeria</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <section>
+            <p>
+                Lorem  <strong>ipsum dolor</strong> sit amet consectetur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adipisicing elit. <i>Eaque ut vitae animi quaerat deleniti pariatur aut</i> , eum ullam incidunt et velit ipsa facere libero harum hic reprehenderit maiores est dolorum?
+            </p>
+            <article>
+                <p>
+                    <b>ipsum dolor</b>, sit amet consectetur <u>adipisicing</u> elit. <code>Repellendus maxime modi quibusdam minima</code>, 
+                    <br>
+                    <br> 
+                    esse ducimus autem illo aliquid beatae excepturi delectus voluptatum accusantium porro, optio magni facere amet voluptas? Nisi?
+                </p>
+            </article>
+            <h2>Tablas</h2>
+            <table border="1">
+                <caption>Informacion</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Sueldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luis</td>
+                        <td>50000</td>
+                    </tr>
+                    <tr>
+                        <td>Anna</td>
+                        <td>25000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Pedro</td>
+                        <td>1000000</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hgroup>
+                <h1>Hola mundo</h1>
+                <h2>Hola mundo</h2>
+                <h3>Hola mundo</h3>
+                <h4>Hola mundo</h4>
+                <h5>Hola mundo</h5>
+                <h6>Hola mundo</h6>
+            </hgroup>
+            <h2>Formulario</h2>
+            <form>
+                <label>Nombre: </label>
+                <input type="text">
+                <br>
+                <label>Contraseña: </label>
+                <input type="password">
+                <br>
+                <label>Fecha de nacimiento: </label>
+                <input type="date">
+                <br>
+                <label>Edad</label>
+                <input type="number">
+                <br>
+                <label>Genero: </label>
+                <input type="radio" value="M">
+                <input type="radio" value="F">
+                <br>
+                <label>Domicilio: </label>
+                <select name="provincia">
+                    <option value="Loja">Loja</option>
+                    <option value="Pichincha">Pichincha</option>
+                    <option value="Carchi">Carchi</option>
+                </select>
+                <br>
+                <!--tambien puede ser submit en lugar de button -->
+                <input type="button" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+            <h2>Enlaces</h2>
+            <a href="#header" alt="Header">Ir al Header</a>
+            <br>
+            <br>
+            <a href="https://www.epn.edu.ec/" title="Pagina facultad" alt="Fis" target="_blank">Ir a fis</a>
+            <h2>Multimedia</h2>
+            <!--como img tambien se puede usar picture para poder cargar imagenes-->
+            <img src="web.webp" alt="web">
+            <img src="https://i.ytimg.com/vi/3-CL2-6gdDA/maxresdefault.jpg" alt="chipi chipi chapa chapa dubi dubi daba daba" height="10px" width="90px">
+            <video src="video.mp4" controls></video>
+            <audio src="audio.mp3" controls></audio>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/es-VQu3t--E?si=zmrzarz5oZkSyvpa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <object data="prueba.html"></object>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31918.36309482727!2d-78.4929088!3d-0.1942658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a58b2e422f9%3A0xc098a2c1aeded375!2sHospital%20Metropolitano!5e0!3m2!1ses-419!2sec!4v1715374252681!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer>
+            Todos los derechos reservados &copy;
+        </footer>
+    </body>
+</html>

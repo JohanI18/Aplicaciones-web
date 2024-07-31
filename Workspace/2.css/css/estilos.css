@@ -1,0 +1,152 @@
+/*
+body {
+    background-color: burlywood;
+    color: green;
+}
+h1 {
+    color: blue;
+    font-family: Impact;
+}
+nav{
+    color: red;
+    font-size: 30px;
+}
+main {
+    background-color: orange;
+}
+main section {
+    color: yellow;
+}
+aside {
+    background-color: black;
+    color: white;
+}
+footer {
+    background-color: red;
+    color: white;
+}
+|<------------------------------------>| regla css
+|<>| Selector
+    |<------------------------------>| Declaración
+    |<>| Propiedad
+           |<>| Valor
+h1 {color: blue; font-family: Impact;}
+en CSS3 exisen 239 propiedades
+*/
+/*SELECTORES
+Selector universal: eliminar el margen y el relleno*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*Selector de tipo o etiqueta: afecta a todos los elementos de ese tipo*/
+nav {
+    color: blue;
+    font-size: 20px;
+}
+/*Selector decendente: elementos dentro de otros*/
+article {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: green;
+}
+article span {
+    color: red;
+}
+article span a {
+    color: black;
+    text-decoration: none;
+    background: aqua;
+}
+/*Selector de clase: afecta a todos los elementos con esa clase*/
+
+.destacado {
+    color: orange;
+    font-weight: bold;
+    background: gray;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    background: white;
+}
+
+.alerta {
+    color: black;
+    background: yellow;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+/*Selector de id: afecta a un solo elemento*/
+
+#destacado {
+    background-color: coral;
+}
+div#destacado {
+    background-color: green;
+}
+ /*UNIDADES DE MEDIDA
+    --Absolutas
+        px: píxeles
+        cm: centímetros
+        mm: milímetros
+        in: pulgadas
+        pt: puntos
+        pc: picas
+    --Relativas
+        em: relativo al tamaño de la fuente del elemento
+        ex: relativo a la altura de la x de la fuente del elemento
+        pix: relativo al tamaño de la fuente del elemento
+    --Porcentajes
+        %: relativo al tamaño del elemento padre
+        h2 {font-size: 20%;}
+
+--COLORES
+    --Palabras clave (nombre en ingles)
+        red, blue, green, yellow, black, white, orange, purple, pink, brown, gray, silver, gold, coral, aqua, burlywood
+    --RGB
+        RedGreenBlue
+        valoes entre 0 y 255
+        h2 {color: rgb(255, 0, 0);}
+    --RGB Porcentual
+        h2 {color: rgb(10%, 53%, 98%);}
+    --RGB HEXADECIMAL
+        h2 {color: #AF52BC;}
+        h2 {color: #AF5;} //corta #AF5 = #AAFF55
+    --Colores del sistema
+*/
+
+footer {
+    color: #AF52BC;
+    width: 800px;
+    height: 250px;
+    border: 10px solid black;
+    margin-left: 20px;
+    margin-top: .15em;
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: brown;
+    background-image: url(../../html/web.webp);
+    background-position: top;
+    background-repeat: repeat-y;
+}
+
+/*Modelo de caja
+    --Margen: espacio entre el borde del elemento y el borde del elemento padre
+    --Relleno: espacio entre el borde del elemento y el contenido
+    --Borde: línea que rodea el contenido y el relleno
+    --Ancho: ancho del contenido
+    --Alto: alto del contenido
+    --Ancho total: ancho + margen + relleno + borde
+    --Alto total: alto + margen + relleno + borde
+    --Box-sizing: border-box; //ancho y alto incluyen el relleno y el borde
+    --Box-sizing: content-box; //ancho y alto incluyen solo el contenido
+    --Box-sizing: padding-box; //ancho y alto incluyen el relleno
+    --Box-sizing: margin-box; //ancho y alto incluyen el margen
+    --Box-sizing: border-box; //ancho y alto incluyen el borde
+    --Box-sizing: inherit; //hereda el box-sizing del elemento padre
+    --Box-sizing: initial; //establece el box-sizing en su valor por defecto
+    --Box-sizing: unset; //restablece el box-sizing al valor por defecto
+*/
